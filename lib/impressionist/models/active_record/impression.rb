@@ -5,7 +5,7 @@ class Impression < ActiveRecord::Base
 
   belongs_to :impressionable, :polymorphic=>true
 
-  after_save :update_impressions_counter_cache
+  #after_save :update_impressions_counter_cache
 
   private
 
